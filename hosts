@@ -1,0 +1,2 @@
+[ourwebserver]
+52.42.169.93 ansible_ssh_private_key_file=/home/ubuntu/ansible-webserver.pem

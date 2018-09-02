@@ -1,0 +1,14 @@
+---
+- hosts: ourwebserver
+  become: yes
+  remote_user: ubuntu
+  gather_facts: no
+
+  tasks:
+      - name: Update repo
+        raw: sudo apt-get update
+      - name: Setup Nginx webserver
+        become: yes
+        apt: pkg=nginx state=installed update_cache=true
+      - name: index.html copy
+        template: src=index.html.j2 dest=/usr/share/nginx/html/index.html
