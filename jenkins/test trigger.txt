@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 test Jenkins push build trigger...12345
+=======
+test Jenkins push build trigger... 1
+>>>>>>> 43b0989b1cb541eaf41d06bbc3c5cb111d081a29
